@@ -5,11 +5,11 @@ font-family: 'Courier New', Courier, monospace;
 font-size: 16px;
 font-weight:normal;
 line-height: 1.6em;
-margin:0;
+
 }
 .container{
     width: 80%;
-    margin:auto;
+    margin:3px;
 }
 .button{
     background-color: #333;
@@ -116,4 +116,46 @@ a:active{
     color:#fff;
     padding:15px;
     box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height:500px;
+    border: 1px solid #000;
+    margin-top:30px;
+    position:relative;
+    background-image: url('download.jpeg');
+    background-position: 100px 200px;
+    background-position: center bottom;
+}
+
+.p-box h2{
+    position:absolute;
+    top:100px;
+    left: 200px;
+}
+.p-box h3{
+    position: absolute;
+    bottom: 400px;
+    right: 600px;
+}
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+.my-list li:first-child{
+background:red;
+}
+.my-list li:last-child{
+    background: blue;
+
+}
+.my-list li:nth-child(5){
+    background: yellow;
+}
+.my-list li:nth-child(even){
+background: grey;
+}
+.my-list li:nth-child(odd){
+    background: green;
 }
